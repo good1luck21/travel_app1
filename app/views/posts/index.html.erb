@@ -1,0 +1,7 @@
+<h1>投稿一覧</h1>
+<% @posts.each do |post| %>
+<%= post.title %> | <%= post.toukousya.name %><br />
+<% post.details.each do |detail| %>
+<%= detail.content %>
+<% end %>
+<% end %>
